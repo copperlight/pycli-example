@@ -31,7 +31,7 @@ def countdown(msg: str) -> None:
     last_msg_len = 0
 
     for i in range(3, 0, -1):
-        m = f'{i} ' + msg
+        m = f'{i} {msg}'
         status_message(m)
         last_msg_len = len(m)
         time.sleep(1)
@@ -40,18 +40,18 @@ def countdown(msg: str) -> None:
 
 
 def say_hello(args: Namespace) -> None:
-    countdown(f'Preparing to say hello...')
+    countdown('Preparing to say hello...')
     print(f'Hello, {args.name}!')
 
 
 def fetch_json() -> None:
-    countdown(f'Preparing to fetch json...')
+    countdown('Preparing to fetch json...')
     r = requests.get(EXAMPLE_URL)
 
     if r.ok:
         data = r.json()
         print(f'Download successful ({r.status_code}), data has {len(data)} entries.')
-        print(f'The contents of the 10th entry:')
+        print('The contents of the 10th entry:')
         print(json.dumps(data[10], indent=4, sort_keys=True))
     else:
         print('Download failed.')
