@@ -1,3 +1,5 @@
+[![Snapshot](https://github.com/copperlight/pycli-example/actions/workflows/snapshot.yml/badge.svg)](https://github.com/copperlight/pycli-example/actions/workflows/snapshot.yml) [![Release](https://github.com/copperlight/pycli-example/actions/workflows/release.yml/badge.svg)](https://github.com/copperlight/pycli-example/actions/workflows/release.yml)
+
 ## Introduction
 
 This project provides a minimal example of CLI application packaging for Python.
